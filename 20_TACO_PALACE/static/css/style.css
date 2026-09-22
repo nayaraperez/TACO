@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* ================= HEADER ================= */
+header {
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #ffffff;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 30px;
+    flex-wrap: wrap;
+}
+
+.logo_taco {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.logo_taco img {
+    height: 22px;
+    width: auto;
+}
+
+.logo_taco h1 {
+    font-size: 20px;
+    color: #000000;
+}
+
+.texto_naranja {
+    color: #fc6600;
+}
+
+.logo_carrito {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.barra_busqueda {
+    display: flex;
+    align-items: center;
+}
+
+.barra_busqueda input {
+    border: 1px solid #a0a0a0;
+    padding: 2px 6px;
+    font-size: 11px;
+    height: 22px;
+    width: 120px;
+    color: #333333;
+}
+
+.boton_naranja {
+    height: 22px;
+    padding: 0 10px;
+    border: none;
+    font-size: 11px;
+    background-color: #fc6600;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.carrito_cero {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+}
+
+.carrito_cero img {
+    height: 16px;
+    width: auto;
+}
+
+/* ================= CONTENEDOR PRINCIPAL ================= */
+main {
+    padding: 15px 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Menú de categorías superior */
+.menu_arriba {
+    background-color: #fee8c6;
+    padding: 10px 20px;
+}
+
+.menu_arriba ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.foto_comida {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.foto_comida img {
+    width: 115px;
+    height: 95px;
+}
+
+.foto_comida p {
+    font-size: 11px;
+    color: #111111;
+}
+
+/* ================= SECCIÓN INTERMEDIA ================= */
+.seccion_intermedia {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* Izquierda */
+.section_izquerda {
+    /* Mantenemos tu base */
+    flex: 2.3;
+    background-color: #bebebe;
+    display: flex;
+    align-items: center;
+    padding: 25px 30px;
+    gap: 20px;
+    overflow: hidden;
+    flex-wrap: wrap; 
+}
+
+.texto_grande {
+    flex: 1;
+    text-align: center;
+}
+
+.texto_grande h2 {
+    font-size: 28px;
+    color: #000000;
+}
+
+.texto_grande h2 .texto_negrita {
+    font-size: 30px;
+}
+
+.texto_grande p {
+    font-size: 18px;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.texto_grande p a {
+    color: #000000;
+}
+
+.section_izquerda img {
+    flex: 1 1 250px; /* Permite encogerse y define un ancho mínimo flexible */
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover; 
+}
+
+/* Columna Derecha  */
+.section_derecha {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.section_derecha h3 {
+    font-size: 22px;
+    color: #000000;
+    text-align: center;
+}
+
+.caja {
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.caja img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.caja_parrafo_inferior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 10px;
+    background-color: #ffffff;
+}
+
+.caja_parrafo_inferior p {
+    font-size: 11px;
+    color: #000000;
+}
+
+.caja_parrafo_inferior a {
+    font-size: 11px;
+    color: #4b2c82;
+}
+
+.Mas {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+    background-color: #fc6600;
+    color: #ffffff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
